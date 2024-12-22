@@ -1,10 +1,11 @@
 {
-    "parent": "item/handheld",
-    "textures": {
+  "parent": "item/generated",
+  "textures": {
       "layer0": "item/tripwire_hook"
-    },
-    "overrides": [
+  },
+  "overrides": [
       { "predicate": { "custom_model_data": 101 }, "model": "item/pistol" }
-    ]
-  }
+  ]
+}
+
   
