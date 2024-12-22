@@ -1,6 +1,6 @@
 {
-    "parent": "minecraft:item/generated",
+    "parent": "item/handheld",
     "textures": {
-        "layer0": "minecraft:item/pistol"
+      "layer0": "item/pistol"
     }
-}
+  }

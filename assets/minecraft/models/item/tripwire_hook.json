@@ -1,14 +1,20 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-      "layer0": "minecraft:item/tripwire_hook"
-  },
-  "overrides": [
-    { 
-      "predicate": { 
-          "custom_model_data": 101 
-      },
-      "model": "item/pistol" 
-    }
-  ]
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/tripwire_hook"
+    },
+    "cases": [
+      {
+        "when": 101,
+        "model": {
+          "type": "model",
+          "model": "item/pistol"
+        }
+      }
+    ]
+  }
 }
+
